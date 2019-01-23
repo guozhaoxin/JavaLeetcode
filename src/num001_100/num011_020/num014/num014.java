@@ -1,4 +1,4 @@
-package num001_100.num011_020.num_014;
+package num001_100.num011_020.num014;
 
 /*
 14. Longest Common Prefix
