@@ -1,4 +1,4 @@
-package num001_100.num021_030;
+package num001_100.num021_030.num021;
 
 /*
 21. Merge Two Sorted Lists
