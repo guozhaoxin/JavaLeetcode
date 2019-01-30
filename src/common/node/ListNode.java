@@ -1,8 +1,8 @@
 package common.node;
 
 public class ListNode {
-      int val;
-      ListNode next;
+      public int val;
+      public ListNode next;
       public ListNode(int x) {
           this.val = x;
       }
@@ -14,6 +14,14 @@ public class ListNode {
               System.out.print('\t');
               temp = temp.next;
           }
+      }
+
+      public void add(int num){
+        ListNode pre = this;
+        while (pre.next != null){
+            pre = pre.next;
+        }
+        pre.next = new ListNode(num);
       }
 
 }
