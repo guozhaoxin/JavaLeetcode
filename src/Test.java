@@ -1,8 +1,8 @@
 public class Test {
     public static void main(String[] args) {
-        String a = "123";
+        String a = "你asdfafd好";
+        System.out.println(a.charAt(2));
 
-        int b = Integer.valueOf(a).intValue();
-        System.out.println(b);
+
     }
 }
