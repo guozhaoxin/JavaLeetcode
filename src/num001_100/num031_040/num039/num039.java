@@ -47,11 +47,14 @@ public class num039 {
 
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList<>();
         if(candidates == null || candidates.length == 0){
-            return null;
+            return res;
         }
         Arrays.sort(candidates);
-        List<List<Integer>> res = new ArrayList<>();
+        if(candidates[0] > target){
+            return res;
+        }
         for(int index = candidates.length - 1;index >= 0;index--){
             if(candidates[index] > target){
                 continue;
@@ -64,7 +67,6 @@ class Solution {
     }
 
     private void helper(int[] candidates, int index, int remainder, List<Integer> cur, List<List<Integer>> res){
-//        System.out.println(cur);
         if(remainder < 0){
             return;
         }
