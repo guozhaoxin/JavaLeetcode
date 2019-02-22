@@ -46,7 +46,7 @@ public class num039 {
 }
 
 class Solution {
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         if(candidates == null || candidates.length == 0){
             return res;
@@ -71,10 +71,7 @@ class Solution {
             return;
         }
         if(remainder == 0){
-            List<Integer> temp = new ArrayList<>();
-            for(Integer num : cur){
-                temp.add(num);
-            }
+            List<Integer> temp = new ArrayList<>(cur);
             res.add(temp);
             return;
         }
